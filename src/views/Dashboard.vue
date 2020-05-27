@@ -8,11 +8,13 @@
         <router-view />
       </div>
     </main>
+    <app-footer />
     <upload-popup />
   </section>
 </template>
 <script lang="ts">
 import AppHeader from "@/components/Header.vue";
+import AppFooter from "@/components/Footer.vue";
 import Sidebar from "@/components/sidebar";
 
 import { getToken } from "@/rest/token";
@@ -27,7 +29,8 @@ export default {
   components: {
     Sidebar,
     UploadPopup,
-    AppHeader
+    AppHeader,
+    AppFooter
   },
   mounted() {
     if (!getToken()) {

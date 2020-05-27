@@ -4,7 +4,8 @@
     <notifications group="app" />
   </div>
 </template>
-
+<script>
+</script>
 <style lang="scss">
 @import '@/assets/sass/_vars.scss';
 @import '@/assets/sass/base.scss';
