@@ -1,0 +1,63 @@
+@import '@/assets/sass/_vars.scss';
+
+.auth-container {
+  min-height: 100vh;
+  background: url(https://cdn.pixabay.com/photo/2015/02/08/21/02/night-629084_1280.jpg)
+    no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .auth-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+
+  .reset-form {
+    padding: 10px 0 20px 0;
+  }
+
+  .navigation {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    z-index: 99;
+
+    .link {
+      cursor: pointer;
+      color: $primary;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .first-form-column {
+    padding-right: 15px;
+  }
+
+  .second-form-column {
+    padding-left: 15px;
+  }
+
+  .card-wrapper {
+    z-index: 3;
+    max-width: 500px;
+  }
+
+  .title {
+    text-align: left;
+    font-size: 22px;
+    line-height: 27px;
+    margin: 0;
+    margin-bottom: 27px;
+  }
+}

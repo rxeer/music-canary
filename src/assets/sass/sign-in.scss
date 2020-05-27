@@ -1,0 +1,11 @@
+@import '@/assets/sass/_vars.scss';
+
+.auth {
+  .actions {
+    text-align: center;
+  }
+
+  .card-wrapper {
+    max-width: 500px !important;
+  }
+}

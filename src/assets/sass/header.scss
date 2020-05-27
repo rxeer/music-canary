@@ -1,0 +1,78 @@
+@import '@/assets/sass/_vars.scss';
+
+.header {
+  height: $header-height;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: $sidebar-width;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.05);
+
+  .notifications {
+    position: relative;
+    cursor: pointer;
+
+    .badge {
+      width: 15px;
+      height: 15px;
+      background: $primary;
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+      font-size: 10px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      position: absolute;
+      top: -5px;
+      right: 8px;
+    }
+  }
+
+  .notifications-list {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    color: $yellow;
+  }
+
+  .route-name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 25px;
+    color: $text-color;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    border: 1px solid $text-color;
+
+    & > img {
+      object-fit: cover;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  .user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 80px;
+  }
+
+  @media (max-width: 1200px) {
+    margin-left: $sidebar-md-width;
+  }
+}
