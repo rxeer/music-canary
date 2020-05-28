@@ -14,7 +14,6 @@
         >
         </vue-dropzone>
         <div class="folder">
-          <font-awesome-icon icon="cloud-upload-alt" class="icon" />
           <app-button size="small">Choose file</app-button>
           <p class="description">One high resolution image</p>
           <p class="extension">PNG, JPG 800x800</p>

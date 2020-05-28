@@ -5,55 +5,46 @@
     <ul class="menu-list">
       <li class="menu-list-item">
         <router-link to="/home">
-          <font-awesome-icon icon="home" class="menu-icon" />
           <span>Home</span>
         </router-link>
       </li>
       <li class="menu-list-item">
         <router-link to="/profile">
-          <font-awesome-icon icon="user" class="menu-icon" />
           <span>My profile</span>
         </router-link>
       </li>
       <li class="menu-list-item">
         <router-link to="/search">
-          <font-awesome-icon icon="search" class="menu-icon" />
           <span>Search</span>
         </router-link>
       </li>
       <li class="menu-list-item">
         <router-link to="/like-dislike">
-          <font-awesome-icon icon="thumbs-up" class="menu-icon" />
           <span>Like/Dislike</span>
         </router-link>
       </li>
       <li class="menu-list-item">
         <router-link to="/chats">
-          <font-awesome-icon icon="eye" class="menu-icon" />
           <span>Chats</span>
         </router-link>
       </li>
       <li class="menu-list-item">
         <router-link to="/matches">
-          <font-awesome-icon icon="globe-europe" class="menu-icon" />
           <span>Matches</span>
         </router-link>
       </li>
       <li class="menu-list-item">
         <router-link to="/visitors">
-          <font-awesome-icon icon="eye" class="menu-icon" />
           <span>Visitors</span>
         </router-link>
       </li>
       <li class="menu-list-item">
         <router-link to="/favorites">
-          <font-awesome-icon icon="heart" class="menu-icon" />
           <span>Favorites</span>
         </router-link>
       </li>
       <li class="menu-list-item">
         <router-link to="/settings">
-          <font-awesome-icon icon="cog" class="menu-icon" />
           <span>Setting</span>
         </router-link>
       </li>

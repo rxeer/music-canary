@@ -3,15 +3,6 @@
     <p class="route-name">{{ routeName }}</p>
 
     <div class="user-info">
-      <div class="notifications" v-popover:notifications>
-        <font-awesome-icon icon="bell" class="icon" />
-        <div class="badge">1</div>
-      </div>
-
-      <popover name="notifications">
-        <div class="notifications-list">Notifications 🎉</div>
-      </popover>
-
       <div class="avatar">
         <img :src="currentUser.avatar" alt="avatar image" />
       </div>
@@ -23,7 +14,7 @@
   </header>
 </template>
 
-<script lang="ts">
+<script>
 import { mapGetters, mapActions } from 'vuex';
 
 export default {
@@ -31,12 +22,16 @@ export default {
     ...mapActions(['getCurrentUser']),
   },
   async mounted() {
-    await this.getCurrentUser();
+    try {
+      await this.getCurrentUser();
+    } catch (err) {
+      console.log(err);
+    }
   },
   computed: {
     ...mapGetters(['currentUser']),
-    routeName(): string {
-      return this.$route.name;
+    routeName() {
+      return this.$route.name || '';
     },
   },
 };

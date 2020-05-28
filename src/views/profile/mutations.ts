@@ -1,16 +1,20 @@
+import { Store } from 'vuex';
+
 export default {
-  setCurrentUser(state, payload) {
+  setCurrentUser(state: any, payload: any) {
     state.content = payload;
   },
-  addContent(state, { type, data }) {
+
+  addContent(state: any, { type, data }: any) {
     state.assets = { ...state.assets, [type]: data };
   },
-  removeContent(state, { type, contentId }) {
+
+  removeContent(state: any, { type, contentId }: any) {
     const assets = { ...state.assets };
     const assetContent = assets[type];
 
     const newAssetContent = assetContent.filter(
-      (item) => item.id !== contentId
+      (item: any) => item.id !== contentId
     );
     assets[type] = newAssetContent;
     state.assets = assets;

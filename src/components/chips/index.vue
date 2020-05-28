@@ -1,7 +1,6 @@
 <template>
   <ul class="chips">
     <li class="chip" v-for="(item, index) in items" :key="index">
-      <font-awesome-icon icon="times" class="icon" v-on:click="onClick" />
 
       {{ item }}
     </li>

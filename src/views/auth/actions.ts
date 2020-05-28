@@ -1,7 +1,7 @@
-import { LoginDto } from '@/@types'
+import { LoginDto, RegisterDto } from '@/@types';
 import request from '@/rest/request';
 export default {
-  async signUp({ commit }, registerData) {
+  async signUp({ commit }: any, registerData: RegisterDto) {
     try {
       const { data } = await request('/users/register', 'post', registerData);
       commit('setTokens', data);
@@ -10,7 +10,7 @@ export default {
     }
   },
 
-  async signIn({ commit }, loginData: LoginDto) {
+  async signIn({ commit }: any, loginData: LoginDto) {
     try {
       const { data } = await request('/users/login', 'post', loginData);
       commit('setTokens', data);
@@ -19,9 +19,18 @@ export default {
     }
   },
 
-  async startResetPassword(_state, email: string) {
+  async startResetPassword(_state: any, email: string) {
     try {
       await request('/users/password/reset', 'post', { email });
+    } catch (err) {
+      throw new Error(err);
+    }
+  },
+
+  async getCountryList({ commit }: any) {
+    try {
+      const { data } = await request('/countries');
+      commit('setCountries', data);
     } catch (err) {
       throw new Error(err);
     }
