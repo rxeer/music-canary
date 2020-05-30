@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import './../../assets/css/_vars.scss';
+@import '@/assets/sass/_vars.scss';
 
 .v-select {
   background: $primary;

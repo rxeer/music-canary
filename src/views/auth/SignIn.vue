@@ -36,7 +36,7 @@
   </section>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from "vue";
 import { mapActions } from "vuex";
 import Component from "vue-class-component";
@@ -60,7 +60,7 @@ import AuthContainer from "@/views/auth/components/AuthContainer.vue";
   }
 })
 class SignIn extends Vue {
-  private form = form({
+  form = form({
     email: "",
     password: ""
   })
@@ -72,8 +72,8 @@ class SignIn extends Vue {
       "email.email": "Invalid email address"
     });
 
-  private loading = false;
-  private rememberMe = false;
+  loading = false;
+  rememberMe = false;
 
   redirectToSignUp() {
     this.$router.push({ path: "sign-up" });

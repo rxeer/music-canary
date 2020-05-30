@@ -12,7 +12,7 @@
     <upload-popup />
   </section>
 </template>
-<script lang="ts">
+<script>
 import AppHeader from "@/components/Header.vue";
 import AppFooter from "@/components/Footer.vue";
 import Sidebar from "@/components/sidebar";

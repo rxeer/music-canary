@@ -5,7 +5,7 @@ import { getToken } from './token';
 const token: string = getToken();
 
 const emptyObject = {};
-export const API_URL = 'http://localhost:3003/api/v1';
+export const API_URL = 'https://shielded-brook-74168.herokuapp.com/api/v1';
 
 const request = async (
   url: string,

@@ -32,7 +32,7 @@
     </auth-container>
   </section>
 </template>
-<script lang="ts">
+<script>
 import { mapActions } from "vuex";
 import AppButton from "@/components/button";
 import TextInput from "@/components/text-input";

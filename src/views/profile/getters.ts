@@ -1,4 +1,4 @@
 export default {
-  currentUser: (state) => state.content,
-  assetsGetter: (state) => state.assets,
+  currentUser: (state: any) => state.content,
+  assetsGetter: (state: any) => state.assets,
 };

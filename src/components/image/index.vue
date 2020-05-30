@@ -2,7 +2,6 @@
   <div class="image">
     <img :src="source" alt="" />
     <template v-if="showClose">
-      <font-awesome-icon icon="times" class="icon" v-on:click="onDelete" />
     </template>
   </div>
 </template>

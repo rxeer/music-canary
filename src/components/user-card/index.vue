@@ -7,11 +7,6 @@
   >
     <div class="content">
       <template v-if="user.liked || filled">
-        <font-awesome-icon
-          icon="heart"
-          v-on:click="toggleLike(user.id)"
-          class="icon filled"
-        />
       </template>
       <template v-else>
         <svg
