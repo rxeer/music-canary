@@ -1,0 +1,28 @@
+@import '@/assets/sass/_vars.scss';
+
+#app {
+  .canary-notification {
+    font-size: 16px;
+		padding: 13px;
+		color: #fff;
+		border-radius: 4px;
+    margin: 10px 10px 5px;
+    background: $blue;
+
+		.notification-content {
+			font-size: 14px;
+		}
+		
+    &.warn {
+      background: $warn;
+    }
+
+    &.error {
+      background: $primary-dark;
+    }
+
+    &.success {
+      background: $success;
+    }
+  }
+}

@@ -6,6 +6,7 @@ import store from './store';
 
 Vue.config.productionTip = false;
 import '@/config/assets';
+import '@/config/notifications';
 
 import 'normalize.css';
 import 'bootstrap-4-grid/scss/grid.scss';
