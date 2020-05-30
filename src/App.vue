@@ -1,14 +1,17 @@
 <template>
   <div id="app">
     <router-view />
-    <notifications group="app" />
+    <notifications group="app" classes="canary-notification" />
   </div>
 </template>
 <script>
+export default {
+  name: "App"
+};
 </script>
 <style lang="scss">
-@import '@/assets/sass/_vars.scss';
-@import '@/assets/sass/base.scss';
+@import "@/assets/sass/_vars.scss";
+@import "@/assets/sass/base.scss";
 
 #app {
   font-family: $base-font;

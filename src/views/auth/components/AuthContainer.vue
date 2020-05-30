@@ -23,18 +23,14 @@
     </div>
   </section>
 </template>
-<script lang="ts">
+<script>
 import Logo from '@/components/logo';
 import Card from '@/components/card';
 
 import { getToken } from '@/rest/token';
 
-interface State {
-  ready: boolean
-}
-
 export default {
-  data(): State {
+  data() {
     return {
       ready: false,
     };

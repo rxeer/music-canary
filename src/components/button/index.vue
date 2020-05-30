@@ -7,11 +7,9 @@
     @click="handleClick"
   >
     <div v-if="loading">
+      <clip-loader class="spinner" :loading="loading" color="#fff" />
     </div>
     <template v-else>
-      <template v-if="brandIcon">
-        <font-awesome-icon :icon="['fab', brandIcon]" />
-      </template>
       <span>
         <slot></slot>
       </span>
@@ -20,29 +18,34 @@
 </template>
 
 <script>
+import ClipLoader from 'vue-spinner/src/ClipLoader';
+
 export default {
   props: [
-    'onClick',
-    'variant',
-    'type',
-    'brandIcon',
-    'size',
-    'loading',
-    'disabled',
-    'className',
+    "onClick",
+    "variant",
+    "type",
+    "brandIcon",
+    "size",
+    "loading",
+    "disabled",
+    "className"
   ],
+  components: {
+    ClipLoader
+  },
   methods: {
     handleClick(event) {
       if (this.onClick) {
         this.onClick(event);
       }
-    },
-  },
+    }
+  }
 };
 </script>
 
 <style lang="scss">
-@import '@/assets/sass/_vars.scss';
+@import "@/assets/sass/_vars.scss";
 
 .button {
   appearance: 0;

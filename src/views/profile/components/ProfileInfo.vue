@@ -8,8 +8,6 @@
           <template v-if="editMode">
             <div class="avatar-overlay" @click="showModal">
               <div>
-                <font-awesome-icon icon="cloud-upload-alt" class="icon" />
-
                 <p class="title">New Photo</p>
               </div>
             </div>
@@ -73,26 +71,6 @@
           </li>
           <li class="action">
             <img src="@/assets/icons/svg/present.svg" alt />
-          </li>
-        </ul>
-      </template>
-
-      <template v-else>
-        <ul class="actions edit">
-          <li class="action" :class="{ active: gender === 'male' }">
-            <font-awesome-icon
-              icon="mars"
-              class="icon"
-              v-on:click="switchGender('male')"
-            />
-          </li>
-
-          <li class="action" :class="{ active: gender === 'female' }">
-            <font-awesome-icon
-              icon="venus"
-              class="icon"
-              v-on:click="switchGender('female')"
-            />
           </li>
         </ul>
       </template>

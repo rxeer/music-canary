@@ -1,7 +1,7 @@
 import request from '@/rest/request';
 
 export default {
-  async getCurrentUser({ commit }) {
+  async getCurrentUser({ commit }: any) {
     try {
       const { data } = await request('/users/current');
       commit('setCurrentUser', data);
@@ -9,7 +9,8 @@ export default {
       throw new Error(err);
     }
   },
-  async deleteProfileContent({ commit }, { contentType, type, contentId }) {
+
+  async deleteProfileContent({ commit }: any, { contentType, type, contentId }: any) {
     try {
       await request('contentType', 'delete', {
         [contentType]: contentId,
