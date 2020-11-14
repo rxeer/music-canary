@@ -6,8 +6,8 @@
 </template>
 <script>
 export default {
-  name: 'App'
-}
+  name: "App"
+};
 </script>
 <style lang="scss">
 @import "@/assets/sass/_vars.scss";
