@@ -5,6 +5,7 @@ import SignInPage from '@/views/auth/SignIn.vue';
 import SignUpPage from '@/views/auth/SignUp.vue';
 import DashboardPage from '@/views/Dashboard.vue';
 import ProfilePage from '@/views/profile/Profile.vue';
+import VisitorsPage from '@/views/visitors/Visitors.vue';
 import ResetPasswordPage from '@/views/auth/ResetPassword.vue';
 
 Vue.use(VueRouter);
@@ -33,6 +34,11 @@ const routes: Array<RouteConfig> = [
         path: '/profile',
         name: 'Profile',
         component: ProfilePage,
+      },
+      {
+        path: '/visitors',
+        name: 'Visitors',
+        component: VisitorsPage,
       },
     ],
   },
